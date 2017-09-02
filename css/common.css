@@ -1,0 +1,22 @@
+#header {
+	background:url("../images/bg.png");
+	box-shadow:0 0 100px 10px rgba(255,255,255,.9) inset;
+	background-size: 100% 140px;
+	background-repeat: no-repeat;
+}
+
+#home-slider .slide-text p {
+	text-indent: 2em;
+    margin-top: 84px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+
+#home-slider .slide-text p span {
+	font-size: 60px;
+}
+
+#services {
+	margin: 30px 0;
+	background-color: #eeecec;
+}
