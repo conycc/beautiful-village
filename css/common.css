@@ -1,3 +1,6 @@
+a {
+	text-decoration: none;
+}
 #header {
 	background:url("../images/bg.png");
 	box-shadow:0 0 100px 10px rgba(255,255,255,.9) inset;
@@ -28,4 +31,14 @@
 	display: block;
 	margin: 10px auto;
 	width: 600px;
+}
+#blog-details .source {
+	display: table;
+	margin: 0 auto;
+}
+#blog-details .source a {
+	line-height: 40px;
+	padding: 10px 30px;
+	font-size: 21px;
+	color: darkgray;
 }
