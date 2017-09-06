@@ -24,7 +24,7 @@ $html .= <<<EOT
 <div class="col-sm-12 col-md-12">
     <div class="single-blog single-column">
         <div class="post-thumb">
-            <a href="blog.php?id={$value['index']}"><img
+            <a href="blog.php?id={$value['index']}" target="_blank"><img
                     src="{$value['cover']}"
                     class="img-responsive" alt=""></a>
             <div class="post-overlay">
@@ -32,11 +32,11 @@ $html .= <<<EOT
             </div>
         </div>
         <div class="post-content overflow">
-            <h2 class="post-title bold"><a href="blog.php?id={$value['index']}">{$value['name']}</a></h2>
+            <h2 class="post-title bold"><a href="blog.php?id={$value['index']}" target="_blank">{$value['name']}</a></h2>
             <h3 class="post-author">由<a href="{$value['detail']['author']['link']}">{$value['detail']['author']['name']}</a>发布
             </h3>
             <p>{$value['desc']}</p>
-            <a href="blog.php?id={$value['index']}" class="read-more">查看更多</a>
+            <a href="blog.php?id={$value['index']}" class="read-more" target="_blank">查看更多</a>
             <div class="post-bottom overflow">
                 <ul class="nav navbar-nav post-nav">
                     <li><a href="#"><i class="fa fa-tag"></i>{$value['name']}</a></li>
@@ -67,7 +67,8 @@ EOT;
                                 <?php
                                 include "config.php";
                                 foreach ($list as $value) {
-                                    echo "<li><a href='blog.php?id='".$value['index'].">".$value['name']."</a></li>";
+                                    $href = "blog.php?id=".$value['index'];
+                                    echo "<li><a href=$href target='_blank'>".$value['name']."</a></li>";
                                 }
                                 ?>
                             </ul>

@@ -64,7 +64,12 @@ EOT;
                         <div class="sidebar-item tag-cloud">
                             <h3>标签</h3>
                             <ul class="nav nav-pills">
-                                <li><a href="#">婺源</a></li>
+                                <?php
+                                include 'config.php';
+
+                                $info = $list[$_GET['id'] - 1];
+                                echo '<li><a href="blog.php?id='.$info['index'].'" target="_blank" >'.$info['name'].'</a></li>';
+                                ?>
                                 <li><a href="#">美丽</a></li>
                                 <li><a href="#">乡村</a></li>
                                 <li><a href="#">游玩</a></li>
