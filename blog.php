@@ -21,7 +21,6 @@
                             $html = '';
                             $html .= <<<EOT
 <div class="single-blog blog-details two-column">
-    <h2 class="post-title bold"><a href="#">{$info['name']}</a></h2>
     <div class="post-thumb">
         <a href="#"><img src="{$info['cover']}" class="img-responsive" alt=""></a>
         <div class="post-overlay">
@@ -29,6 +28,7 @@
         </div>
     </div>
     <div class="post-content overflow">
+        <h2 class="post-title bold"><a href="#">{$info['name']}</a></h2>
         <h3 class="post-author"><a href="{$info['detail']['author']['link']}">【来源由{$info['detail']['author']['name']}提供】</a>
         </h3>
         {$info['detail']['content']}
@@ -46,6 +46,18 @@ EOT;
 
                 <div class="col-md-3 col-sm-5">
                     <div class="sidebar blog-sidebar">
+                        <div class="sidebar-item tag-cloud">
+                            <?php
+                            include 'config.php';
+
+                            $info = $list[$_GET['id'] - 1];
+                            if ($info['process']) {
+                                echo '<a href="timeline.php?id='.$info['index'].'" target="_blank" class="btn btn-default" style="width: 100%; height: 40px; font-size: 18px;">历史沿革</a>';
+                            }else{
+                                echo '<button class="btn btn-default" style="width: 100%; height: 40px; font-size: 18px;" disabled>暂无历史沿革</button>';
+                            }
+                            ?>
+                        </div>
                         <?php
                         include 'comment_right.php';
                         ?>
