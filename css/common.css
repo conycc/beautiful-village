@@ -2,7 +2,7 @@ a {
 	text-decoration: none;
 }
 #header {
-	background:url("../images/bg.png");
+	/*background:url("../images/bg.png");*/
 	box-shadow:0 0 100px 10px rgba(255,255,255,.9) inset;
 	background-size: 100% 140px;
 	background-repeat: no-repeat;
