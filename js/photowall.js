@@ -227,7 +227,7 @@
     imgdata: [
         // north
         {
-            img: 'http://cc-assets.oss-cn-hangzhou.aliyuncs.com/country/blogs/1.jpg',
+            img: '../images/cover/1.jpg',
             x: -1000,
             y: 0,
             z: 1500,
@@ -235,7 +235,7 @@
             nz: 1
         },
         {
-            img: 'http://cc-assets.oss-cn-hangzhou.aliyuncs.com/country/blogs/2.jpg',
+            img: '../images/cover/2.jpg',
             x: 0,
             y: 0,
             z: 1500,

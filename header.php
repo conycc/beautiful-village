@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <h1>中国美丽乡村</h1>
                 </a>
 
