@@ -14,7 +14,7 @@
                     <div class="slide-text">
                         <p><span>乡</span>村是一个历史的、动态的概念，从世界范围看，乡村这个特定的经济区域分为五个历史发展阶段：原始型乡村、古代型乡村、近代型乡村、现代型乡村、未来型乡村。中国乡村目前正处于由近代型向现代型过渡的阶段。乡村还是一个休闲的地方，那里悠然自在。现在由于城市环境的恶化，以及城市中心区域的越来越拥挤，越来越多的城市人开始选择到乡村去度假或安家。[摘自百度]
                         </p>
-                        <a href="./blogs.php" class="btn btn-common">跟着小分队一起出发吧~</a>
+                        <a href="./blogs.php" class="btn btn-common" target="_blank">跟着小分队一起出发吧~</a>
                     </div>
                     <img src="./images/home-right.png" class="slider-hill" alt="slider image" width="400px;"
                          style="margin-right: 100px">
